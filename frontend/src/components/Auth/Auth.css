@@ -1,0 +1,44 @@
+.container {
+  margin-top: 5rem;
+}
+#button,
+::-webkit-file-upload-button {
+  cursor: pointer;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  background: #fff;
+  border: 1px solid #673a87;
+  color: #673ab7;
+  box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.25);
+}
+
+#button:focus,
+#button:active {
+  outline: 0 none;
+  box-shadow: none;
+}
+#button:hover,
+::-webkit-file-upload-button:hover {
+  transition: 0.5s;
+  background: #673ab7;
+  border: 1px solid #673ab7;
+  color: #fff;
+}
+#navbarMenu {
+  background-color: #673ab7;
+}
+
+.input:focus,
+.inputText:focus {
+  box-shadow: none;
+  outline: 0 none;
+  border-color: #673ab7;
+}
+
+.content {
+  border: 1px solid #673ab7;
+  padding: 1rem;
+}
+#authContainer {
+  background: white;
+}

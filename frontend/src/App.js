@@ -7,8 +7,7 @@ import Blogs from "./components/Blogs/Blogs";
 import Form from "./components/Form/Form";
 import { getBlogs } from "./actions/blogs";
 import Navigationbar from "./components/Navbar/Navbar";
-import Login from "./components/Login/Login";
-import SignUp from "./components/Signup/SignUp";
+import Auth from "./components/Auth/Auth";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -20,8 +19,7 @@ function App() {
       <div className="app">
         <Navigationbar />
         <Switch>
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/auth" component={Auth} />
           <Route exact path="/publish" component={Form} />
           <Route path="/" exact component={Blogs} />
         </Switch>

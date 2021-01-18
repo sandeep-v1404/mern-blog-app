@@ -1,0 +1,6 @@
+.input:focus,
+.inputText:focus {
+  box-shadow: none;
+  outline: 0 none;
+  border-color: #673ab7;
+}
