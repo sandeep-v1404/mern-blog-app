@@ -5,11 +5,11 @@ import cors from "cors";
 import blogRoute from "./routes/blogs.js";
 
 const app = express();
-
-app.use("/blogs", blogRoute);
+app.use(cors());
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
-app.use(cors());
+
+app.use("/blogs", blogRoute);
 
 const CONNECTION_URL =
   "mongodb+srv://admin:8kgGPiHu5ToD2OhA@cluster0.jez5g.mongodb.net/blogdb?retryWrites=true&w=majority";
